@@ -1,9 +1,381 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS elements</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+
 <body>
-  <h1>Kasia Siwilewicz</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <!--nav nav nav-->
+    <nav class="topnav">
+        <a href="#tags">HTML table tags</a>
+        <a href="#atr">HTML table attributes</a>
+        <a href="#html">HTML elements</a>
+        <a href="#css">CSS properties</a>
+    </nav>
+
+    <h1>Welcome to HTML & CSS element reference!</h1>
+    <div>
+        <p>This page lists HTML and CSS elements you've been using recently. A little cheat sheet whenever you need it</p>
+    </div>
+
+
+    <!-- first table - table tags -->
+    <p id="koko">Let's start with HTML Table elements!</p>
+    <h2 id="tags">Table Tags</h2>
+   <table>
+       <tr>
+           <th class="th">TAG</th>
+           <th class="th">NAME</th>
+           <th class="th">DESCRIPTION </th>
+       </tr>
+       <tr class="tr2">
+           <td class="attribute">< table ></td>
+           <td>Table</td>
+           <td>The wrapper element for all HTML tables</td>
+       </tr>
+       <tr>
+           <td class="attribute">< thead ></td>
+           <td>Table head</td>
+           <td>The set of rows defining the column headers in a table</td>
+       </tr>
+       <tr class="tr2">
+           <td class="attribute">< tbody ></td>
+           <td>Table body</td>
+           <td>The set of rows containing actual table data</td>
+       </tr>
+       <tr>
+           <td class="attribute">< tr ></td>
+           <td>Table row</td>
+           <td>The table row container</td>
+       </tr>
+       <tr class="tr2">
+           <td class="attribute">< td ></td>
+           <td>Table data</td>
+           <td>Table row container</td>
+       </tr>
+       <tr>
+           <td class="attribute">< tfoot ></td>
+           <td>Table foot</td>
+           <td>The set of rows defining the footer in a table</td>
+       </tr>
+</table>
+
+
+<!-- second table - table attributes-->
+<h2 id="atr">Table Attributes</h2>
+<table>
+    <tr>
+        <th class="th">ATTRIBUTE</th>
+        <th class="th">NAME</th>
+        <th class="th">DESCRIPTION</th>
+    </tr>
+    <tr>
+        <th class="attribute">< colspan ></th>
+        <th>Column</th>
+        <th>Defines how many columns a < td > element should span</th>
+    </tr>
+    <tr class="tr2">
+        <th class="attribute">< rowspan ></th>
+        <th>Row span</th>
+        <th>Defines how many rows a < td > element should span</th>
+    </tr>
+    <tr>
+        <td class="attribute"> < caption ></td>
+        <td><b>Caption </b></td>
+        <td><b>Definsed a table caption. Must be inserted immediatley after the < table > tag </b></td>
+    </tr>
+</table>
+
+<!-- table pic-->
+<div>
+    <p id="pimg"> Okay then, we know how the attributes looks like and the meaning of them, but how to build a table? Just take a look on a picture below!</p>
+    <img src="styles/html_table.png" src="table example">
+    <p id="pimg">WOOOOOHOOOOOOOO! Now you own tables like a hero!</p>
+    <img src="https://bestanimations.com/media/happy-dance/1483571654happy-dance-animated-gif-image-51.gif" style="width:50%;" height="50%"alt="Lisa Simpson Dance">
+</div>
+<br>
+<br>
+
+<!-- third table - HTML stuff-->
+
+<h2 id="html">HTML Attribute Reference</h2>
+
+<table>
+    <tr>
+        <th class="th">TAG</th>
+        <th class="th">DESCRIPTION</th>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute"> < a > </td>
+        <td>Defines a hyper link, which is used to link from one page to another. Don't forget to use href attribute, which indicates the link's destination.  </td>
+    </tr>
+    <tr>
+        <td class="attribute">< article ></td>
+        <td>Self-contained tag. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. Great for forum/blog post or a news story.</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< aside ></td>
+        <td>Defines content aside from the page content and should be indirectly related to the surrounding content.</td>
+    </tr>
+    <tr>
+        <td class="attribute"> < audio ></td>
+        <td>Used to embed sound content in a document, such as music or other audio streams. If contains one or more < suorce > tags with different audio the browser will choose the first source it supports.</suorce></td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< b ></td>
+        <td>Make text <b>bold</b> without marking it as important</td>
+    </tr>
+    <tr>
+        <td class="attribute">< blockquote ></td>
+        <td>Specifies a section that is quoted from another source. Dont forget to specifie cite="" in the opening tag!</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< body ></td>
+        <td>Contains all the contents of an HTML document</td>
+    </tr>
+    <tr>
+        <td class="attribute">< br ></td>
+        <td>Line break element</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< button ></td>
+        <td>Defines a clickable button. Inside a < button > element you can put text (and tags like < i >, < b >, < strong >, < br >, < img >, etc.). That;s not possible wirh a button created with the < input > element!! Always specify the <b>type</b>  attribute for a < button > element to tell browser what type of button it is.</td>
+    </tr>
+    <tr>
+        <td class="attribute">< div ></td>
+        <td>Defines a division or a section in an HTML document. Used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< dl ></td>
+        <td>Description list. The < dt > tag defines a term/name and < dt > tag  </td>
+    </tr>
+    <tr>
+        <td class="attribute">< em ></td>
+        <td>Used to define emphasized text. The content inside is typically displayed in <em>italic</em>.</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< figcaption ></td>
+        <td>Defines a caption for a < figure > element</td>
+    </tr>
+    <tr>
+        <td class="attribute">< figure ></td>
+        <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">< footer > </td>
+        <td>Defines a footer for a document or section. Typically contains authorship information, copyright information, contact information, sitemap, back to top links, related documents</td>
+    </tr>
+    <tr>
+        <td class="attribute">< form></td>
+        <td>Used to create an HTML form for user input. Can contain one or more of the following form elements: < input >, < textarea >, < button >, < select >, < option >, < optgroup >, < fieldset >, < label >, < output ></td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< h1 > to < h6 ></td>
+       <td>Used to define HTML headings.< h1 > defines the most important headind and < h6 > the least important heading.</td>
+   </tr>
+   <tr>
+       <td class="attribute">< head ></td>
+       <td>Container for metadata (data about data) and is placed between the < html > tag and the < body > tag.</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< header ></td>
+       <td>Represents a container for introductory content or a set of navigational links. Typically contains h1-h2 tags, logo or icon, authorship information.</td>
+   </tr>
+   <tr>
+        <td class="attribute">< img ></td>
+        <td>Used to embed an image in an HTML page. Required attributes:
+            src - Specifies the path to the image
+            alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+            </td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< input ></td>
+       <td>Specifies an input field where the user can enter data. Can be displayed in several ways, depending on the type attribute (button/email/number/text/password/etc.).</td>
+   </tr>
+   <tr>
+       <td class="attribute">< li ></td>
+       <td> Defines a list item. Used inside ordered lists < ol > (displayed with numbers or letters), unordered lists < ul > and menu lists < menu > (both usually displayed with bullet points).</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< link ></td>
+       <td>Most often used to link to external style sheets. Remember about rel="" and href="".</td>
+   </tr>
+   <tr>
+       <td class="attribute">< nav ></td>
+       <td>Defines a set of navigation links (ONLY for major block navigation links).</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< p ></td>
+       <td>Defines a paragraph. Browsers automatically add a single blank line before and after each < p > element</td>
+   </tr>
+   <tr>
+       <td class="attribute"> script</td>
+       <td>Used to embed a JavaScript.</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< source ></td>
+       <td>Used to specify multiple media resources for media elements, such as video/audio/picture. It allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width.</td>
+   </tr>
+   <tr>
+       <td class="attribute">< span ></td>
+       <td>Inline container used to mark up a part of a text, or a part of a document. Easily styled by CSS or manipulated with JavaScript using the class or id attribute.</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute"> < strong ></td>
+       <td>Used to define text with strong importance. The content inside is typically displayed in <b>bold</b></td>
+   </tr>
+   <tr>
+       <td class="attribute">< title > </td>
+       <td>Defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</td>
+   </tr>
+   <tr class="tr2">
+       <td class="attribute">< video ></td>
+       <td>Used to embed video content in a document, such as a movie clip or other video streams.</td>
+   </tr>
+   <tr>
+        <td class="attribute"> <! -- comment --></td>
+        <td>The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.</td>
+   </tr>
+   </table>
+<!-- CSS table -->
+<h2 id="css">CSS properties</h2>
+<table>
+    <tr>
+        <th class="th">PROPERTY</th>
+        <th class="th">DESCRIPTION</th>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">background-color</td>
+        <td>Specifies the background color of an element</td>
+    </tr>
+    <tr>
+        <td class="attribute">background-image</td>
+        <td>Specifies one or more background images for an element</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">border</td>
+        <td>A shorthand property for border-width, border-style and border-color</td>
+    </tr>
+    <tr>
+        <td class="attribute">border-color</td>
+        <td>Sets the color of the four borders</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">border-style</td>
+        <td>Sets the style of the four borders</td>
+    </tr>
+    <tr>
+        <td class="attribute">box-sizing</td>
+        <td>Defines how the width and height of an element are calculated: should they include padding and borders, or not</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">color</td>
+        <td>Sets the color of text</td>
+    </tr>
+    <tr>
+        <td class="attribute">cursor</td>
+        <td>Specifies the mouse cursor to be displayed when pointing over an element</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">float</td>
+        <td>Specifies whether an element should float to the left, right, or not at all</td>
+    </tr>
+    <tr>
+        <td class="attribute">@font-face</td>
+        <td>A rule that allows websites to download and use fonts other than the "web-safe" fonts</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">font-family</td>
+        <td>Specifies the font family for text</td>
+    </tr>
+    <tr>
+        <td class="attribute">font-size</td>
+        <td>Specifies the font size of text</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">font-style</td>
+        <td>Specifies the font style for text</td>
+    </tr>
+    <tr>
+        <td class="attribute">font-weight</td>
+        <td>Specifies the weight of a font</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">height</td>
+        <td>Sets the height of an element</td>
+    </tr>
+    <tr>
+        <td class="attribute">@import</td>
+        <td>Allows you to import a style sheet into another style sheet</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">letter-spacing</td>
+        <td>Increases or decreases the space between characters in a text</td>
+    </tr>
+    <tr>
+        <td class="attribute">margin</td>
+        <td>Sets all the margin properties in one declaration (-top/-bottom/-left/-right)</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">@media</td>
+        <td>Sets the style rules for different media types/devices/sizes</td>
+    </tr>
+    <tr>
+        <td class="attribute">min-height</td>
+        <td>Sets the minimum height of an element</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">min-width</td>
+        <td>Sets the minimum width of an element</td>
+    </tr>
+    <tr>
+        <td class="attribute">opacity</td>
+        <td>Sets the opacity level for an element. From 0 to 1</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">overflow</td>
+        <td>Controls what happens to the content taht spills, overflows outside its box (hidden/scroll/visible/etc.)</td>
+    </tr>
+    <tr>
+        <td class="attribute">padding</td>
+        <td>can be more specipy like -bottom/-left/-right/-top/etc.</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">position</td>
+        <td>Specifies the type of positioning method used for an element (static, relative, absolute or fixed)</td>
+    </tr>
+    <tr>
+        <td class="attribute">text-align</td>
+        <td>Specifies the horizontal alignment of text (center/left/right/justify)</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">text-transform</td>
+        <td>Controls the capitalization of text (uppercase/lowercase/capitalize)</td>
+    </tr>
+    <tr>
+        <td class="attribute">visibility</td>
+        <td>Specifies whether or not an element is visible (hidden/visible)</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">width</td>
+        <td>Sets the width of an element</td>
+    </tr>
+    <tr>
+        <td class="attribute">word-spacing</td>
+        <td>Increases or decreases the space between words in a text</td>
+    </tr>
+    <tr class="tr2">
+        <td class="attribute">z-index</td>
+        <td>Controls how far back/forward an element should appear on the web page when elements overlap. z-index doesn't work on static elements.</td>
+    </tr>
+</table>
 </body>
- 
+<footer>
+    by Kasia S.
+</footer>
 </html>
